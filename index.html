@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כניסה מטורפת</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff0057, #8b00ff, #00e5ff, #ffd000);
+            background-size: 400% 400%;
+            animation: gradientBG 6s infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial Black', sans-serif;
+            overflow: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .enter-button {
+            padding: 20px 50px;
+            font-size: 2rem;
+            color: #fff;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #ff7300, #ff0000, #ffeb00, #47ff00, #00ffee);
+            background-size: 300%;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 0 50px rgba(255,255,255,0.8);
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            animation: buttonBG 4s infinite alternate;
+        }
+
+        @keyframes buttonBG {
+            from { background-position: 0% 50%; }
+            to { background-position: 100% 50%; }
+        }
+
+        .enter-button:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 100px rgba(255,255,255,1);
+        }
+
+    </style>
+</head>
+<body>
+    <button class="enter-button" onclick="window.location='hi.html'">כניסה</button>
+</body>
+</html>
